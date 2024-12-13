@@ -1,0 +1,88 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputField,
+.fileInput {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.inputField:focus,
+.fileInput:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 0.875rem;
+}
+
+.filePreview {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #16a085;
+}
+
+.submitButton {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.submitButton:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 15px;
+  }
+
+  .inputField,
+  .fileInput {
+    font-size: 0.9rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+  }
+}
